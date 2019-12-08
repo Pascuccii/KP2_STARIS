@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tc:students xmlns:tc="https://www.example.com">
+
+
+    <student id="ID-1">
+        <name>Антон</name>
+        <surname>Иванов</surname>
+        <patronymic>Дмитриевич</patronymic>
+        <email>ttt.ID@gmail.com</email>
+        <averageRate>6</averageRate>
+        <educationForm>платная</educationForm>
+    </student>
+
+    <student id="ID-2">
+        <name>Назар</name>
+        <surname>Уваров</surname>
+        <patronymic>Борисович</patronymic>
+        <email>nazar33.u@tut.by</email>
+        <averageRate>9</averageRate>
+        <educationForm>бюджетная</educationForm>
+    </student>
+
+    <student id="ID-3">
+        <name>Донат</name>
+        <surname>Стегайло</surname>
+        <patronymic>Владимирович</patronymic>
+        <email>ugk.555@mail.ru</email>
+        <averageRate>5</averageRate>
+        <educationForm>платная</educationForm>
+    </student>
+
+    <student id="ID-4">
+        <name>Харитон</name>
+        <surname>Гришин</surname>
+        <patronymic>Борисович</patronymic>
+        <email>grishin.bor@gmail.com</email>
+        <averageRate>3</averageRate>
+        <educationForm>платная</educationForm>
+    </student>
+
+    <student id="ID-5">
+        <name>Эрик</name>
+        <surname>Шумейко</surname>
+        <patronymic>Дмитриевич</patronymic>
+        <email>erik_shumeiko@tut.by</email>
+        <averageRate>8</averageRate>
+        <educationForm>бюджетная</educationForm>
+    </student>
+</tc:students>

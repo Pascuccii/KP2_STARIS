@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<tc:schema xmlns:tc="http://www.w3.org/2001/XMLSchema"
+           xmlns:ex="https://www.example.com"
+           targetNamespace="https://www.example.com">
+
+
+    <tc:element name="students">
+        <tc:complexType>
+            <tc:sequence>
+                <tc:element name="student"
+                            type="ex:Student"
+                            minOccurs="2"
+                            maxOccurs="unbounded"/>
+            </tc:sequence>
+        </tc:complexType>
+    </tc:element>
+
+    <tc:complexType name="Student">
+        <tc:sequence>
+            <tc:element name="name">
+                <tc:simpleType>
+                    <tc:restriction base="tc:string"/>
+                </tc:simpleType>
+            </tc:element>
+
+            <tc:element name="surname">
+                <tc:simpleType>
+                    <tc:restriction base="tc:string"/>
+                </tc:simpleType>
+            </tc:element>
+
+            <tc:element name="patronymic">
+                <tc:simpleType>
+                    <tc:restriction base="tc:string"/>
+                </tc:simpleType>
+            </tc:element>
+
+            <tc:element name="email">
+                <tc:simpleType>
+                    <tc:restriction base="tc:string"/>
+                </tc:simpleType>
+            </tc:element>
+
+            <tc:element name="averageRate">
+                <tc:simpleType>
+                    <tc:restriction base="tc:int">
+                        <tc:minExclusive value="0"/>
+                        <tc:maxExclusive value="10"/>
+                    </tc:restriction>
+                </tc:simpleType>
+            </tc:element>
+
+            <tc:element name="educationForm">
+                <tc:simpleType>
+                    <tc:restriction base="tc:string">
+                        <tc:enumeration value="платная"/>
+                        <tc:enumeration value="бюджетная"/>
+                    </tc:restriction>
+                </tc:simpleType>
+            </tc:element>
+
+        </tc:sequence>
+
+        <tc:attribute name="id" use="required" type="tc:ID"/>
+    </tc:complexType>
+
+
+</tc:schema>
